@@ -15,6 +15,8 @@ function App() {
     setWantToCook (newWantToCook);
   }
 
+
+
   return (
     <main className='max-w-[1320px] mx-auto'>
       <Navber></Navber>
@@ -22,13 +24,12 @@ function App() {
       <OurRecipes></OurRecipes>
 
       <div className='md:flex justify-between'>
-        <Recipes handleAddToCook={handleAddToCook}></Recipes>
+        <Recipes handleAddToCook={handleAddToCook} ></Recipes>
         <WantToCooks wantToCook={wantToCook}></WantToCooks>
 
         
       </div>
     </main>
-
 
   )
 }

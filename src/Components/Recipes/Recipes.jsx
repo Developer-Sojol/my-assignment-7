@@ -15,7 +15,7 @@ const Recipes = ({handleAddToCook}) => {
 
     return (
         <div className="w-2/3">
-            <h1 className="text-3xl">Recipes:{recipes.length}</h1>
+            
             <div className="md:grid grid-cols-2 gap-6 m-6">
                 {
                     recipes.map(recipe => <Recipe 
