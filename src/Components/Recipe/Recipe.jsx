@@ -16,7 +16,7 @@ const Recipe = ({recipe, handleAddToCook}) => {
         
         <div>
             {
-                ingredients.map (ingredient => <li>{ingredient}</li> )
+                ingredients.map (ingredient => <li key={Math.random().toString()}> {ingredient}</li> )
             }
         
         </div>
