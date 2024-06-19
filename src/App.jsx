@@ -7,22 +7,22 @@ import OurRecipes from './Components/OurRecipes/OurRecipes'
 import Recipes from './Components/Recipes/Recipes'
 import WantToCooks from './Components/WantToCooks/WantToCooks'
 
+
+
 function App() {
   const [wantToCook, setWantToCook] = useState([]);
 
-  const handleAddToCook = recipe =>{
-    const isExists = wantToCook.find(wtc =>wtc.recipe_id === recipe.recipe_id);
+  const handleAddToCook = recipe => {
+    const isExists = wantToCook.find(wtc => wtc.recipe_id === recipe.recipe_id);
     if (!isExists) {
       const newWantToCook = [...wantToCook, recipe];
-      setWantToCook (newWantToCook);
+      setWantToCook(newWantToCook);
     }
-    else{
+    else {
       alert("Already Added")
     }
 
   }
-
-
 
   return (
     <main className='max-w-[1320px] mx-auto'>
@@ -33,8 +33,6 @@ function App() {
       <div className='md:flex justify-between'>
         <Recipes handleAddToCook={handleAddToCook} ></Recipes>
         <WantToCooks wantToCook={wantToCook}></WantToCooks>
-
-        
       </div>
     </main>
 

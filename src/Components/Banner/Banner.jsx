@@ -6,7 +6,7 @@ const Banner = () => {
           h-[600px] '>
                 <div className="text-center space-y-10">
 
-                    <h1 className="text-5xl  ">Discover an exceptional cooking 12 <br /> class tailored for you!</h1>
+                    <h1 className="text-5xl font-bold ">Discover an exceptional cooking 12 <br /> class tailored for you!</h1>
                     <p className="text-center">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding  <br /> problems to become an exceptionally well world-class Programmer.</p>
 
                     <div className="space-x-16 mt-6 ">
